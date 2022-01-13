@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="assets/Css/Style.css">
 
 </head>
-<body>
+<body class="fundo">
+
     <ul class="menu flex">
         <li>
            <a href="index.html">Ínicio</a> 
@@ -19,9 +20,9 @@
          </li> 
     
      </ul>
-     
+
     <h1 class="center">
-         Formato de pescaria!!!
+         Formatos de pescaria!!!
     </h1>
     <div class="padding-35">
     <p>
@@ -34,53 +35,60 @@
     </p>
     </div>
 
-    <div class="padding-35">
-    <p>
-        <h2>Formatos de Pescaria!</h2>
+    <h2>Formatos de Pescaria!</h2>
         <br>
         
-        <a href="https://www.flypesca.com.br/o-que-e-fly-fishing">Pesca de arremesso</a> 
-        <br>
-       
-        <img class="img" src="assets/imagens/pesca de arremesso.jpg" alt="pesca de arremesso">
-        <br>
-        <br>
-       <a href="https://blog.lazereaventura.com.br/afinal-como-funciona-a-pesca-em-caiaque/">Pesca de caiaque</a> 
-        <br>
+    <div class="padding-35 flex">
+
+       <div class="center"><a href="https://www.flypesca.com.br/o-que-e-fly-fishing">Pesca de arremesso</a> 
+       <img class="img " src="assets/imagens/pesca de arremesso.jpg" alt="pesca de arremesso">
+        </div>
+
+      <div class="center"><a href="https://blog.lazereaventura.com.br/afinal-como-funciona-a-pesca-em-caiaque/">Pesca de caiaque</a> 
+        <img class="img " src="assets/imagens/pesca no caiaque.gif" alt="pesca no caiaque">
+        </div>
+
+    
+        <div class="center"><a href="https://www.flypesca.com.br/o-que-e-fly-fishing">Pesca com mosca (Fly Fishing)</a> 
+         <img class="img " src="assets/imagens/fly fishing.gif" alt="Fly fishing">
+        </div>
+
         
-        <img class="img" src="assets/imagens/pesca no caiaque.gif" alt="pesca no caiaque">
-        <br>
-        <br>
-        <a href="https://www.flypesca.com.br/o-que-e-fly-fishing">Pesca com mosca (Fly Fishing)</a> 
-        
-        <br>
-        <img class="img" src="assets/imagens/fly fishing.gif" alt="Fly fishing">
-        <br>
-        <br>
-        <a href="https://blog.pescagerais.com.br/pescaria-em-alto-mar/">Pesca Oceânica</a> 
-        
-        <br>
-        <img class="img" src="assets/imagens/pesca maritima.gif" alt="pesca maritima">
-        <br>
-        <br>
-        <a href="https://www.fishtv.com/noticias/fish-tv/5-coisas-que-voce-precisa-saber-para-pescar-em-pesqueiros">Pesca em Pesqueiro</a> 
-        
-        <br>
-        <img class="img" src="assets/imagens/pesqueiro.gif" alt="Pesqueiro">
-        <br>
-        <br>
-        <a href="https://pescariasa.com.br/pescaria-recreativa/10-dicas-de-pescaria-raiz-para-pescadores-da-nova-geracao/">Pesca Raiz</a> 
-        
-        <br>
-        <img class="img" src="assets/imagens/pescador raiz.gif" alt="Pescador Raiz">
-        <br>
-        <br>
-    </p>
+        <div class="center"><a href="https://blog.pescagerais.com.br/pescaria-em-alto-mar/">Pesca Oceânica</a> 
+        <img class="img " src="assets/imagens/pesca maritima.gif" alt="pesca maritima">
+        </div>
+
+
+      
+        <div class="center"><a href="https://www.fishtv.com/noticias/fish-tv/5-coisas-que-voce-precisa-saber-para-pescar-em-pesqueiros">Pesca em Pesqueiro</a> 
+         <img class="img " src="assets/imagens/pesqueiro.gif" alt="Pesqueiro">
+        </div>
+
+
+        <div class="center"><a href="https://pescariasa.com.br/pescaria-recreativa/10-dicas-de-pescaria-raiz-para-pescadores-da-nova-geracao/">Pesca Raiz</a> 
+        <img class="img " src="assets/imagens/pescador raiz.gif" alt="Pescador Raiz">
+        </div>
     </div>
 
-   <img src="assets/imagens/pesca-mulheres-Carola.jpg" alt="Mulheres aderem à pesca esportiva e movimentam turismo no estado">
+    <div class="form">
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" onkeyup='validaNome()'>
+        <div id="txtNome"></div>
 
-   
+        <label for="e-mail">E-mail:</label>
+        <input type="email" id="e-mail" onkeyup='validaEmail()'>
+        <div id="txtEmail"></div>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" onkeyup="validaMensagem()"></textarea>
+        <div id="txtMensagem"></div>
+
+        <button onclick="enviar()">Enviar</button>
+    </form>
+    </div>
+
+    <script src="assets/JavaScript/script.js"></script>
 
 </body>
 </html>

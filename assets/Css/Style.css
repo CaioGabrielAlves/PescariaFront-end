@@ -1,8 +1,11 @@
 /*Edição de texto e imagens/gif index.html*/
 .center {
-    text-align: center;
+    display: flex;
+   flex-direction: column;
+   padding: 15px;
+   align-items: center;
 }
-img {
+.img {
     width: 280px;
     height: 160px;
     border-radius: 15%;
@@ -27,12 +30,30 @@ img {
     color: blue;
 }
 .padding-35{
-    padding: 35px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
 }
 .flex {
     display: flex;
-    padding: 10px;
-    max-width: 300px;
+    flex-wrap: wrap;
+}
+.fundo{
+    background-color: #936639;
+    
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+input{
+    display: block;
+
+}
+textarea{
+    display: block;
 }
 
 /*Edição de texto e imagens/gif LocaisDePesca.html*/
